@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import RecipeCard from '../components/RecipeCard';
 
-// Access API key from environment variables
 const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
 
 const Home = () => {
