@@ -1,5 +1,4 @@
 {
-  "homepage": "https://amarjeetsingh7503.github.io/recipe-book/",
   "name": "recipe-book",
   "private": true,
   "version": "0.0.0",
@@ -8,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.7.9",
