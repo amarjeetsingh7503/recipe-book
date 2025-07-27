@@ -67,6 +67,7 @@ const Home = () => {
         />
         <button type="submit">
           <i class="material-icons">search</i>
+          <div className="search-btn-text">Search</div>
         </button>
       </form>
 

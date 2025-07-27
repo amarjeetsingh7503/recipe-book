@@ -42,6 +42,10 @@
   background-color: white;
 }
 
+.search-btn-text {
+  display: none
+}
+
 
 @media (max-width: 576px) {
     .heading {
@@ -52,4 +56,8 @@
     .search-form input{
       padding: 0rem 0.8rem;
     }
+
+    .search-btn-text {
+  display: inline
+}
 }
