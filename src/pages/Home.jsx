@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import RecipeCard from "../components/RecipeCard";
 import Banner from "../components/Banner";
+import "./styles/Home.css";
 
 const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
 
@@ -27,14 +28,7 @@ const Home = () => {
     <div className="home">
       <Banner />
 
-      <div
-        style={{
-          textAlign: "center",
-          fontSize: "2rem",
-          fontWeight: "bold",
-          margin: "3rem 0rem",
-        }}
-      >
+      <div className="heading">
         What to <span style={{ color: "#eca83f" }}>Cook</span>?
       </div>
 

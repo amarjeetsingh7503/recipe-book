@@ -4,48 +4,10 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.recipe-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem 3rem;
-}
-
-.recipe-summary {
-    text-align: justify;
-}
-
-
-
-
-
-
-
-.details-link {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 6px;
-  color: white;
-  background-color: black;
-  text-decoration: none;
-}
-
-.details-link:hover {
-  color: white;
-  border: 1px solid rgba(0, 0, 0, 0.545);
-  background-color: rgba(0, 0, 0, 0.545);
-  text-decoration: none;
-}
-
-
-.recipe-card-details {
-  height: 100px;
-}
-
-.recipe-details {
-  padding: 2rem;
-}
-
 .error {
   color: red;
 }
+
+
+
+

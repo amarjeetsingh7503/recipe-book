@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./styles/RecipeCard.css";
 
 const RecipeCard = ({ recipe }) => {
-  console.log(recipe);
+  // console.log(recipe);
   return (
     <div className="recipe-card">
       <div>

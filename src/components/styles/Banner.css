@@ -11,7 +11,44 @@
     font-weight: bold;
 }
 
+.banner-tagline {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
 .banner-img img{
     width: 100%;
     height: 21rem;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding-left: 2rem;
+    }
+
+    .banner-text {
+        font-size: 2rem;
+    }
+    
+    .banner-tagline {
+        font-size: 1rem;
+    }
+
+    .banner-img img{
+        height: 15rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-img img{
+        height: 10rem;
+    }
+
+    .banner-text {
+        font-size: 1.5rem;
+    }
+
+    .banner-tagline {
+        font-size: 0.5rem;
+    }
 }

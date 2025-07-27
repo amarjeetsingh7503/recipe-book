@@ -1,0 +1,16 @@
+
+.recipe-summary {
+    text-align: justify;
+}
+
+.recipe-summary a{
+  text-decoration: none;
+  color: black;
+  cursor:auto
+}
+
+
+.recipe-details {
+  padding: 1rem;
+  line-height: 1.5;
+}

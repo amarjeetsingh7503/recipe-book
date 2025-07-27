@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
+import "./styles/RecipeDetails.css";
 
 const RecipeDetails = () => {
   const { id } = useParams();
@@ -34,7 +35,11 @@ const RecipeDetails = () => {
         <img
           src={recipe.image}
           alt={recipe.title}
-          style={{ width: "70%", height: "28rem", borderRadius: "2rem" }}
+          style={{
+            width: "70%",
+            height: "28rem",
+            borderRadius: "2rem",
+          }}
         />
       </div>
       <h3>Description:</h3>
@@ -49,8 +54,10 @@ const RecipeDetails = () => {
         ))}
       </ul>
       <h3>Instructions:</h3>
-      <p dangerouslySetInnerHTML={{ __html: recipe.instructions }}></p>
-      {/* <p>{recipe.instructions}</p> */}
+      <p
+        dangerouslySetInnerHTML={{ __html: recipe.instructions }}
+        className="recipe-instructions"
+      ></p>
     </div>
   );
 };
