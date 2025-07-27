@@ -3,7 +3,6 @@ import axios from "axios";
 import RecipeCard from "../components/RecipeCard";
 import Banner from "../components/Banner";
 import "./styles/Home.css";
-import SearchIcon from "@mui/icons-material/Search";
 
 const API_KEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
 
@@ -67,7 +66,7 @@ const Home = () => {
           onChange={(e) => setInput(e.target.value)}
         />
         <button type="submit">
-          <SearchIcon />
+          <i class="material-icons">search</i>
         </button>
       </form>
 
