@@ -43,7 +43,14 @@ const Home = () => {
       const response = await axios.get(
         `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&number=12&apiKey=${API_KEY}`
       );
-      setRecipes(response.data);
+      if (response.data.length > 0) {
+        setRecipes(response.data);
+      } else {
+        setError("Can't find any recipe. Please try something else.");
+        setTimeout(() => {
+          setError("");
+        }, 3000);
+      }
     } catch (err) {
       console.log(err);
       setError("Failed to fetch recipes. Please try again.");
@@ -66,7 +73,7 @@ const Home = () => {
           onChange={(e) => setInput(e.target.value)}
         />
         <button type="submit">
-          <i class="material-icons">search</i>
+          <i className="material-icons">search</i>
         </button>
       </form>
 
