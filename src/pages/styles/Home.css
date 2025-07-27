@@ -39,11 +39,8 @@
   border: none;
   font-weight: bold;
   cursor: pointer;
+  color: black;
   background-color: white;
-}
-
-.search-btn-text {
-  display: none
 }
 
 
@@ -57,7 +54,4 @@
       padding: 0rem 0.8rem;
     }
 
-    .search-btn-text {
-  display: inline
-}
 }
