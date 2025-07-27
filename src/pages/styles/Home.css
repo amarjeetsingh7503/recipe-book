@@ -9,7 +9,37 @@
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  margin: 3rem 0rem;
+  margin: 2rem 0rem;
+}
+
+.search-form {
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-form input {
+  width: 50%;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  transition: background-color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.search-form input:focus {
+  background-color: rgb(234, 234, 234);
+  border-bottom: 2px solid black;
+}
+
+
+.search-form button {
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
 }
 
 
@@ -17,5 +47,9 @@
     .heading {
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
+    }
+    
+    .search-form input{
+      padding: 0rem 0.8rem;
     }
 }

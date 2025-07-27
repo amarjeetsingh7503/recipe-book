@@ -13,32 +13,9 @@
     text-decoration: none;
 }
 
-.nav-search {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.nav-search input {
-    padding: 0.5rem 0.7rem;
-    border: none;
-    border-bottom: 1px solid black;
-    transition: 0.2s ease-in-out;
-}
-
-.nav-search input:focus {
-    outline: none;
-    background-color: rgba(225, 225, 225, 0.64);
-}
-
-
-.search-icon {
+.account {
+    color: black;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-
-.search-icon:hover {
-    color: rgba(0, 0, 0, 0.575);
 }
 
 @media (max-width: 600px) {
@@ -48,7 +25,7 @@
     gap: 1rem;
   }
 
-  .nav-search {
+  .account {
     display: none;
   }
 }
